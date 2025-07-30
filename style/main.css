@@ -592,7 +592,10 @@ footer {
 }
 
 .submit-btn:hover {
-    background: var(--primary-dark);
+    background: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: bold;
 }
 
 /* Cart Styles */
