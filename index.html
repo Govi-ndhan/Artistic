@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="icon" href="srcimg/app-logo.jpeg" type="image/x-icon">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="script/main.js"></script>
+        <script src="script/gallery.js"></script>
+        <script src="script/cart.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3 class="mobile-menu">⫶</h3>
+            <h1 class="app-name">App Name</h1>
+            <input type="search" name="search-bar" placeholder="Explore the Art" id="search-bar">
+            <img src="" alt="profile" onclick="" aria-describedby="profile" id="profile-img" title="Profile">
+        </header>
+        <nav id="nav">
+            <a href="#home" onclick="show('home')" class="active">Home</a>
+            <hr class="nav-divider">
+            <a href="#projects" onclick="show('projects')">Projects</a>
+            <hr class="nav-divider">
+            <a href="#artist" onclick="show('artist')">Artist</a>
+            <hr class="nav-divider">                
+            <a href="#cart" onclick="show('cart')">Cart</a>
+            <hr class="nav-divider">
+            <a href="#contact" onclick="show('contact')">Contact</a>
+        </nav>
+        <hr class="main-divider">
+        <main>
+            <section class="page show" id="home">
+                <div class="loader"><span class="spinner"></span></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Where Art Meets Inspiration</h1>
+                    <p class="hero-text">Discover unique artworks that speak to your soul. Our curated collection brings together talented artists and art enthusiasts in a vibrant community of creativity.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>Discover</h3>
+                            <p>Explore original artworks from emerging and established artists worldwide.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Connect</h3>
+                            <p>Join a community of art lovers and connect directly with your favorite artists.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Collect</h3>
+                            <p>Start or expand your collection with authentic pieces that inspire you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bar-section">
+                    <div class="nav-box">
+                        <figure>
+                            <img src="srcimg/home-icon" alt="home-icon" class="nav-icon"  title="Home">
+                            <figcaption>
+                                <h4>Home</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="nav-box">
+                        <figure>
+                            <img src="srcimg/projects-icon" alt="projects-icon" class="nav-icon" title="Projects">
+                            <figcaption>
+                                <h4>Projects</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="nav-box">
+                        <figure>
+                            <img src="srcimg/artists-icon" alt="artist-icon" class="nav-icon" title="Artists">
+                            <figcaption>
+                                <h4>Artists</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="nav-box">
+                        <figure>
+                            <img src="srcimg/cart-icon" alt="cart-icon" class="nav-icon" title="Cart">
+                            <figcaption>
+                                <h4>Cart</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="page" id="projects">
+                <h2 class="hero-title">Our Projects</h2>
+                <div class="loader"><span class="spinner"></span></div>
+                <div class="gallery-content">
+                    <p>Explore our curated collection of artworks from talented artists around the world. Each piece tells a unique story and adds a touch of creativity to your life.</p>
+                    <div class="gallery-items">
+                        <div class="art-item">
+                            <img src="srcimg/artwork1.jpg" alt="Abstract Harmony" class="art-image">
+                            <div class="art-info">
+                                <h3>Abstract Harmony</h3>
+                                <p class="artist-name">by Sarah Chen</p>
+                                <p class="art-price">$1,200</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork2.jpg" alt="Urban Dreams" class="art-image">
+                            <div class="art-info">
+                                <h3>Urban Dreams</h3>
+                                <p class="artist-name">by Marcus Rivera</p>
+                                <p class="art-price">$950</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork3.jpg" alt="Nature's Whisper" class="art-image">
+                            <div class="art-info">
+                                <h3>Nature's Whisper</h3>
+                                <p class="artist-name">by Emma Thompson</p>
+                                <p class="art-price">$1,500</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork4.jpg" alt="Digital Evolution" class="art-image">
+                            <div class="art-info">
+                                <h3>Digital Evolution</h3>
+                                <p class="artist-name">by Alex Kim</p>
+                                <p class="art-price">$800</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork1.jpg" alt="Abstract Harmony" class="art-image">
+                            <div class="art-info">
+                                <h3>Abstract Harmony</h3>
+                                <p class="artist-name">by Sarah Chen</p>
+                                <p class="art-price">$1,200</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork2.jpg" alt="Urban Dreams" class="art-image">
+                            <div class="art-info">
+                                <h3>Urban Dreams</h3>
+                                <p class="artist-name">by Marcus Rivera</p>
+                                <p class="art-price">$950</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork3.jpg" alt="Nature's Whisper" class="art-image">
+                            <div class="art-info">
+                                <h3>Nature's Whisper</h3>
+                                <p class="artist-name">by Emma Thompson</p>
+                                <p class="art-price">$1,500</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="art-item">
+                            <img src="srcimg/artwork4.jpg" alt="Digital Evolution" class="art-image">
+                            <div class="art-info">
+                                <h3>Digital Evolution</h3>
+                                <p class="artist-name">by Alex Kim</p>
+                                <p class="art-price">$800</p>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page" id="artist">
+                <h2 class="hero-title">Feartured Artists</h2>
+                <div class="loader"><span class="spinner"></span></div>
+                <div class="artists-grid">
+                    <div class="artist-card">
+                        <img src="srcimg/artist1.jpg" alt="Sarah Chen" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="artist-specialty">Abstract Contemporary</p>
+                            <p class="artist-bio">Award-winning artist known for bold, emotional abstract works that challenge perception.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist2.jpg" alt="Marcus Rivera" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Marcus Rivera</h3>
+                            <p class="artist-specialty">Urban Art | Photography</p>
+                            <p class="artist-bio">Combining street art with fine photography to capture city life in unique perspectives.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist3.jpg" alt="Emma Thompson" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Emma Thompson</h3>
+                            <p class="artist-specialty">Nature & Wildlife</p>
+                            <p class="artist-bio">Creating serene landscapes and wildlife portraits that celebrate natural beauty.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist4.jpg" alt="Alex Kim" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Alex Kim</h3>
+                            <p class="artist-specialty">Digital Art | NFTs</p>
+                            <p class="artist-bio">Pioneering digital artist pushing boundaries in the NFT and digital art space.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist3.jpg" alt="Emma Thompson" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Emma Thompson</h3>
+                            <p class="artist-specialty">Nature & Wildlife</p>
+                            <p class="artist-bio">Creating serene landscapes and wildlife portraits that celebrate natural beauty.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist4.jpg" alt="Alex Kim" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Alex Kim</h3>
+                            <p class="artist-specialty">Digital Art | NFTs</p>
+                            <p class="artist-bio">Pioneering digital artist pushing boundaries in the NFT and digital art space.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist3.jpg" alt="Emma Thompson" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Emma Thompson</h3>
+                            <p class="artist-specialty">Nature & Wildlife</p>
+                            <p class="artist-bio">Creating serene landscapes and wildlife portraits that celebrate natural beauty.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <img src="srcimg/artist4.jpg" alt="Alex Kim" class="artist-image">
+                        <div class="artist-info">
+                            <h3>Alex Kim</h3>
+                            <p class="artist-specialty">Digital Art | NFTs</p>
+                            <p class="artist-bio">Pioneering digital artist pushing boundaries in the NFT and digital art space.</p>
+                            <button class="view-portfolio">View Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page" id="cart">
+                <h2 class="hero-title">Shopping Cart</h2>
+                <div class="loader"><span class="spinner"></span></div>
+                <div id="cart-app" class="cart-container">
+                    <div class="cart-items">
+                        <div v-if="items.length === 0" class="empty-cart">
+                            <h3>Your cart is empty</h3>
+                            <p>Explore our gallery to add some amazing artworks!</p>
+                            <a href="#projects" onclick="show('projects')" class="browse-btn">Browse Gallery</a>
+                        </div>
+                        <div v-else>
+                            <div v-for="item in items" :key="item.id" class="cart-item">
+                                <img :src="'srcimg/' + item.image" :alt="item.title" class="cart-item-image">
+                                <div class="cart-item-details">
+                                    <h3>{{ item.title }}</h3>
+                                    <p class="artist-name">by {{ item.artist }}</p>
+                                    <p class="item-price">${{ item.price }}</p>
+                                </div>
+                                <div class="cart-item-actions">
+                                    <div class="quantity-controls">
+                                        <button @click="decreaseQuantity(item)" class="qty-btn">-</button>
+                                        <span class="quantity">{{ item.quantity }}</span>
+                                        <button @click="increaseQuantity(item)" class="qty-btn">+</button>
+                                    </div>
+                                    <button @click="removeItem(item)" class="remove-btn">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div v-if="items.length > 0" class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>${{ subtotal }}</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>${{ shipping }}</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>${{ tax }}</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>${{ total }}</span>
+                            </div>
+                        </div>
+                        <button @click="checkout" class="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </section>
+            <section class="page" id="contact">
+                <h2 class="hero-title">Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>We'd love to hear from you. Reach out through any of these channels:</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="contact-icon">📍</i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>123 Projects Street, Creative District<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="contact-icon">📧</i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:info@artgallery.com">info@artgallery.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="contact-icon">📞</i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/artgallery" target="_blank" class="social-icon">
+                                    <img src="srcimg/instagram.png" alt="Instagram">
+                                    <span>@artgallery</span>
+                                </a>
+                                <a href="https://facebook.com/artgallery" target="_blank" class="social-icon">
+                                    <img src="srcimg/facebook.png" alt="Facebook">
+                                    <span>Art Gallery Official</span>
+                                </a>
+                                <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
+                                    <img src="srcimg/whatsapp.png" alt="WhatsApp">
+                                    <span>Chat with us</span>
+                                </a>
+                                <a href="https://twitter.com/artgallery" target="_blank" class="social-icon">
+                                    <img src="srcimg/twitter.png" alt="Twitter">
+                                    <span>@artgallery</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <br>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group fullwidth">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn fullwidth">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        <br>
+        <br>
+        </main>
+        <footer>@2025 . All Rights Reserved.
+            <p>Developed by <a href="http://" target="_blank" rel="noopener noreferrer"></a></p>
+        </footer>
+    </body>
+</html>
