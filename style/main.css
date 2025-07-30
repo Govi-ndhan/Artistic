@@ -884,6 +884,10 @@ figcaption h4{
     .nav-box figure{
         width: fit-content;
     }
+    
+    #contactForm{
+        grid-template-columns: 1fr;
+    }
 }
 
 #contact{
