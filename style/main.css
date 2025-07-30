@@ -321,10 +321,6 @@ h2 {
     transition: background 0.3s ease;
 }
 
-.add-to-cart:hover {
-    background: var(--primary-dark);
-}
-
 /* Artist Styles */
 .artists-grid {
     display: flex;
@@ -591,7 +587,7 @@ footer {
     justify-self: center;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .add-to-cart:hover, .browse-btn:hover, .checkout-btn:hover {
     background: var(--secondary);
     color: var(--primary);
     border: 1px solid var(--primary);
@@ -631,14 +627,6 @@ footer {
     border-radius: 7px;
     transition: background 0.3s ease;
 }
-
-.browse-btn:hover {
-    background: var(--secondary);
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    font-weight: bold;
-}
-
 .cart-item {
     display: grid;
     grid-template-columns: 120px 1fr auto;
@@ -750,13 +738,6 @@ footer {
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.checkout-btn:hover {
-    background: var(--secondary);
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    font-weight: bold;
 }
 
 .nav-bar-section{
